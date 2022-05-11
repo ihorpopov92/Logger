@@ -6,7 +6,13 @@ namespace Logger
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine(" ");
+            string startLogger = Console.ReadLine();
+            if (startLogger == "Run")
+            {
+                Starter starter = new Starter();
+                starter.Run();
+            }
         }
     }
 }
