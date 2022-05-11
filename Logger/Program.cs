@@ -15,7 +15,7 @@ namespace Logger
                 starter.Run();
             }
 
-            string log = @"c:\log\log.txt";
+            string log = @"Log.txt";
             if (!File.Exists(log))
             {
                 File.WriteAllText(log, Logger.Instance.GetAllLogs());
